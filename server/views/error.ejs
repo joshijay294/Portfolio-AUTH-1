@@ -1,0 +1,19 @@
+<!-- file name : error.ejs
+    Name : Jay Joshi
+   Student ID : 301318520
+	Date : 20-02-2023 -->
+
+    <%- include ('partials/header.ejs') %> 
+
+ 
+    <%- include ('partials/main_nav.ejs') %>
+    
+    <div class='container'>
+        <h1><%= message %></h1>
+        <h2><%= error.status %></h2>
+        <pre><%= error.stack %></pre>
+    </div>
+    
+    
+    
+    <%- include ('partials/footer.ejs') %>

@@ -1,0 +1,118 @@
+<!-- nav bar -->
+<!-- file name : main_ejs.ejs
+   Name : Rohit
+   Student ID : 301315173
+	Date : 28-01-2023 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img src="/Assests/images/j3.png" width="30" height="30" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+
+          <% 
+           if (title == "Home") {%>
+            <a class="nav-link active" href="/home">
+              <%} else {%> 
+                <a class="nav-link" href="/home"> 
+              <% } %>
+              Home</a>
+          </li>
+
+          <li class="nav-item">
+          <% if (title == "About") {%>
+            <a class="nav-link active" href="/about">
+              <%} else {%> 
+                <a class="nav-link" href="/about"> 
+              <% } %>
+             About</a>
+          </li>
+
+          <li class="nav-item">
+          <% if (title == "Products") {%>
+            <a class="nav-link active" href="/products">
+              <%} else {%> 
+                <a class="nav-link" href="/products"> 
+              <% } %>
+             Products</a>
+          </li>
+
+          <li class="nav-item">
+          <% if (title == "Services") {%>
+            <a class="nav-link active" href="/services">
+              <%} else {%> 
+                <a class="nav-link" href="/services"> 
+              <% } %>
+             Services</a>
+          </li>
+
+          <li class="nav-item">
+          <% if (title == "Contact") {%>
+            <a class="nav-link active" href="/contactus">
+              <%} else {%> 
+                <a class="nav-link" href="/contactus"> 
+              <% } %>
+             Contact Us</a>
+          </li>
+
+
+          <!-- if user is authenticate and valid then only this option will come in nav bar -->
+          
+           <% if(typeof displayname == 'string' && displayname) {%>
+        
+              <% if (title == "Product List") {%>
+           
+                  <%} else {%> 
+                  
+                  <% } %>
+               
+            <%}%> 
+
+            <% if(typeof displayname == 'string' && displayname) {%>
+              <li class="nav-item">
+                <% if (title == "Product List") {%>
+                  <a class="nav-link active" href="/productList">
+                    <%} else {%> 
+                      <a class="nav-link" href="/productList"> 
+                    <% } %>
+                     Contact List</a>
+                </li>
+              <%}%>
+          
+            <!-- add condition for login and logout button in navbar -->
+          <% if(typeof displayname == 'string' && displayname) {%>
+            <li class="navbar-text mx-2">
+              <i class="fas fa-lg fa-user"></i>
+              Welcome, <%=displayname%>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a href="/logout" class="nav-link">
+                
+                Logout
+              </a>
+            </li>
+          <%} else {%>
+            <li class="nav-item mx-2">
+              <a href="/login" class="nav-link">
+             
+                Login
+            </a>
+            </li>
+          <%}%>
+
+
+
+
+
+
+        </ul>
+      </div>
+    </div>
+</nav>

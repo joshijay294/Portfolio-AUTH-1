@@ -1,0 +1,66 @@
+
+<!-- file name : login.ejs
+   Name : Rohit
+   Student ID : 301315173
+	Date : 25-02-2023 -->
+
+
+
+
+<!-- include header with options in main page -->
+<%- include ('../partials/header.ejs') %> 
+
+ <!-- add navigation bar in header -->
+<%- include ('../partials/main_nav.ejs') %> 
+
+
+<main class="login">
+
+    <% if (messages.length>0) {%>
+        <div class="alert alert-dnager">
+        <%= messages %>
+
+        </div>
+    <%} %>
+
+    <div class="row">
+        <div class="offset md-4 col-md-4">
+            <h1 class="login_tittle"> Please Login</h1>
+            <form method="POST" autocomplete="off">
+                <fieldset class="form-group">
+                    <label for="username">User name </label>
+                    <input type="text" class="form-control my-2"
+                    name="username"
+                    placeholder="Enter username"
+                    id="username" required autofocus>
+                </fieldset>
+
+                <fieldset class="form-group my-2">
+                    <label for="password">Password </label>
+                    <input type="password" class="form-control my-2"
+                    name="password"
+                    placeholder="Enter password"
+                    id="password" required>
+                    <a  href="/register">Register here</a>
+
+                </fieldset>
+
+                <fieldset class="form-group text-right">
+                    <input type="submit" class="login-btn mx-3" value="Login">
+                    <a href="/"><input type="button" class="cancel-btn" value="cancel"></a>
+
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+<%- include ('../partials/footer.ejs') %>     

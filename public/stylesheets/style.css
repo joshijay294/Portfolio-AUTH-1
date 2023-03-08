@@ -1,0 +1,688 @@
+/* 
+   file name : app.css
+   Name : Jay JOshi
+Student ID : 301318520
+ Date : 20-02-2023 -->
+	*/
+
+  body {
+    color: #888089;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background-image: url("/Assests/images/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /*----------------------------------------------------
+     2. Document Setup
+  ------------------------------------------------------*/
+  .wrapper {
+    width: 100%;
+  }
+  .spHeight {
+    padding-top: 63px;
+  }
+  .wrapper.noGap {
+    padding-top: 0;
+  }
+  .noMar {
+    margin: 0 !important;
+  }
+  .noPadd {
+    padding: 0px !important;
+  }
+  
+  p {
+    font-size: 13px;
+    line-height: 27px;
+    font-weight: 400;
+    padding-bottom: 33px;
+    margin: 0px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5 {
+    color: #000;
+  }
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 33px;
+    line-height: 76px;
+    font-weight: 400;
+    margin: 0px;
+    padding-bottom: 8px;
+  }
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 29px;
+    color: #372d38;
+    line-height: 57px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0px;
+  }
+  h3 {
+    font-family: "Crimson Text", serif;
+    font-style: italic;
+    font-size: 27px;
+    line-height: 30px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    margin: 0px;
+  }
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 21px;
+    line-height: 24px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  h5 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    color: #372d38;
+    line-height: 24px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    margin: 0px;
+  }
+  
+  .heading {
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  .heading .container {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .heading h2 {
+    font-size: 19px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: relative;
+  }
+  .heading h2:after {
+    content: "";
+    display: block;
+    width: 76px;
+    height: 2px;
+    background: #5b4c5c;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -38px;
+  }
+  .heading h3 {
+    font-size: 18px;
+    line-height: 30px;
+    color: #5b4c5c;
+    padding-bottom: 0;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 1px;
+  }
+  .heading p {
+    line-height: 25px;
+  }
+  
+  .topmar {
+    margin-top: 20px;
+  }
+  
+  /*----------------------------------------------------
+    3. Header Part
+  ------------------------------------------------------*/
+  .homepage h6 {
+    color: #aba8ab;
+  }
+  
+  .homepage .div {
+    height: 20%;
+    width: 20%;
+  }
+  
+  .homepage .para {
+    margin-top: 15%;
+    margin-left: 40%;
+  }
+  
+  .homepage .btn-primary {
+    border: 2px solid #746c75;
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #aba8ab;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+  }
+  .homepage .btn-primary:hover {
+    color: #979497;
+  }
+  
+  /*----------------------------------------------------
+    3. Header Part
+  ------------------------------------------------------*/
+  header {
+    position: relative;
+  }
+  .banner {
+    overflow: hidden;
+    margin: 0 auto !important;
+    background: #cacaca;
+  }
+  .patternOverlay {
+    background: #372d38;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+  }
+  
+  .bannerText {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    text-align: center;
+    margin-top: -35px;
+    padding: 0;
+    z-index: 999;
+  }
+  .bannerText h1 {
+    text-transform: uppercase;
+    line-height: normal;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 4px;
+  }
+  .bannerText h3 {
+    color: #fff;
+    font-size: 19px;
+    line-height: normal;
+    font-weight: 400;
+    text-transform: none;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  /*----------------------------------------------------
+     3.1 Menu Style
+  ------------------------------------------------------*/
+  .navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+  }
+  /*----------------------------------------------------
+    4. About me Style
+  ------------------------------------------------------*/
+  .aboutus {
+    background: #ffffff;
+    text-align: left;
+  }
+  .aboutus .container {
+    padding-top: 80px;
+    padding-bottom: 47px;
+  }
+  .aboutus img {
+    padding: 7px;
+    display: block;
+    border: 1px solid #bab4bb;
+  }
+  .aboutus .heading p {
+    padding-bottom: 41px;
+  }
+  .aboutus h4 {
+    font-size: 16px;
+    color: #5b4c5c;
+    padding-bottom: 20px;
+  }
+  .aboutus .btn-primary {
+    border: 2px solid #746c75;
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #372d38;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+  }
+  .aboutus .btn-primary:hover {
+    color: #979497;
+  }
+  
+  /*----------------------------------------------------
+    5. Skill & Expert Style
+  ------------------------------------------------------*/
+  .skillset {
+    background: #f8f8f8;
+    display: table;
+    width: 100%;
+  }
+  .skillset .container {
+    padding-top: 45px;
+    padding-bottom: 40px;
+  }
+  .skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 53px;
+    width: 100%;
+    background: #e2e1e2;
+    height: 7px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+  }
+  
+  
+  .skillbar-title {
+    position: absolute;
+    top: -27px;
+    left: 0;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 27px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #5b4c5c;
+  }
+  
+  .skillbar-title span {
+    display: block;
+  }
+  
+  .skillbar-bar {
+    height: 7px;
+    width: 0px;
+    background: #e88988;
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    top: -24px;
+    font-size: 14px;
+    color: #796f7a;
+    margin-left: -20px;
+  }
+  
+  /*----------------------------------------------------
+    6. Work Experience Style
+  ------------------------------------------------------*/
+  .myexperties {
+    background: #fff;
+  }
+  .myexperties .container {
+    padding-top: 67px;
+    padding-bottom: 0;
+    margin-bottom: -20px;
+  }
+  .expertiesico {
+    padding: 70px 63px 70px 0;
+    text-align: right;
+    font-family: "Crimson Text", serif;
+    font-size: 21px;
+    line-height: 24px;
+    color: #5b4c5c;
+    font-style: italic;
+  }
+  .expertiesdesc {
+    border-left: 2px solid #ada5ad;
+    padding: 0 0 0 69px;
+    margin-bottom: 100px;
+  }
+  .expertiesdesc p {
+    padding-bottom: 0;
+  }
+  
+  .expertiesdesc h5 {
+    font-family: "Crimson Text", serif;
+    color: #5b4c5c;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+  }
+  /*----------------------------------------------------
+    9. Contact Style
+  ------------------------------------------------------*/
+  
+  .contact {
+    background: #f8f8f8;
+  }
+  .contact .container {
+    padding-top: 75px;
+    padding-bottom: 0;
+  }
+  .mapArea {
+    height: 462px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    background: #3b323c;
+  }
+  .mapArea iframe {
+    width: 100%;
+    height: 100%;
+  }
+  #map img {
+    max-width: none;
+  }
+  
+  .contactDetails {
+    background: #fff;
+  }
+  .contactDetails .container {
+    padding-top: 69px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  
+  .conForm input,
+  .conForm textarea {
+    float: none;
+    display: inline-block;
+  }
+  .conForm input {
+    background: #fafafa;
+    border-bottom: solid 2px #ccc1cd !important;
+    color: #805183;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: none;
+    margin-bottom: 30px;
+    outline: none;
+  }
+  
+  .conForm textarea {
+    background: #fafafa;
+    color: #805183;
+    text-transform: uppercase;
+    border-bottom: solid 2px #ccc1cd !important;
+    padding: 15px 30px;
+    border: none;
+    margin-bottom: 40px;
+    outline: none;
+    height: 185px;
+  }
+  
+  .conForm .btn-primary {
+    border: 2px solid #383838;
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #272627;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+  }
+  .conForm .btn-primary:hover {
+    color: #979497;
+  }
+  
+  .textGroup {
+    position: relative !important;
+    display: inline-block;
+    padding-left: 0px !important;
+  }
+  
+  
+  
+  .contactInfo:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .contactInfo .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  #message {
+    margin-bottom: 30px;
+  }
+  .cinfoBox {
+    padding-bottom: 40px;
+  }
+  .cinfoBox span.infoIcon {
+    display: block;
+    border: solid 2px #fff;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 145px;
+    width: 150px;
+    height: 150px;
+  
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .cinfoBox p {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 0px;
+  }
+  .cinfoBox p a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .cinfoBox p a:hover {
+    color: #ff554e;
+  }
+/* login */
+.login{
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+.login_tittle{
+  color: #888089;
+}
+
+.login-btn{
+  border: 2px solid #746c75;
+  background: none;
+  line-height: 30px;
+  font-size: 12px;
+  color: #aba8ab;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0;
+
+}
+
+.cancel-btn{
+
+  border: 2px solid #746c75;
+  background: none;
+  line-height: 30px;
+  font-size: 12px;
+  color: #aba8ab;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0;
+
+}
+/* register */
+  .register{
+    margin-left: 30%;
+    margin-top: 3%;
+  }
+
+  .register-title{
+    color: #888089;
+  }
+
+  .reg-btn{
+    border: 2px solid #746c75;
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #aba8ab;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+
+  }
+
+  .rcancel-btn{
+
+    border: 2px solid #746c75;
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #aba8ab;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+
+  }
+
+
+  /* list */
+
+  .add-title{
+    color: #888089;
+    margin-left: 30%;
+    margin-top: 1%;
+  }
+
+  .list-title{
+    color: #888089;
+    margin-left: 30%;
+    margin-top: 1%;
+  }
+
+  .text-title{
+    color: #888089;
+  }
+
+  .list-show{
+    margin-top: 0.1%;
+    margin-left: 5%;
+  }
+
+  /* Add CSS  */
+
+  .add{
+    margin-left: 10%;
+    margin-top: 4%;
+  }
+
+  .register-title{
+    color: #888089;
+  }
+
+  .add-btn{
+    border: 2px solid #746c75;
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #aba8ab;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+
+  }
+
+  .acancel-btn{
+
+    border: 2px solid #746c75;
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #aba8ab;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+
+  }
+
+
+  /* edit contact css */
+
+  .edit-contact{
+    margin-left: 10%;
+    margin-top: 4%;
+  }
+
+  .edit-title{
+    color: #888089;
+  }
+
+  .edit-btn{
+    border: 2px solid #746c75;
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #aba8ab;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+
+  }
+
+  .ecancel-btn{
+
+    border: 2px solid #746c75;
+    background: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #aba8ab;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0;
+
+  }

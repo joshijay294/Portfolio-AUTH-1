@@ -1,0 +1,76 @@
+
+<!-- file name : register.ejs
+   Name : Rohit
+   Student ID : 301315173
+	Date : 25-02-2023 -->
+<!-- include header with options in main page -->
+<%- include ('../partials/header.ejs') %> 
+
+ <!-- add navigation bar in header -->
+<%- include ('../partials/main_nav.ejs') %> 
+
+
+<main class="register">
+    <% if (messages.length>0) {%>
+        <div class="alert alert-dnager">
+        <%= messages %>
+
+        </div>
+    <%} %>
+
+    <div class="row">
+        <div class="offset md-4 col-md-4">
+            <h1 class="register-title">Register Here</h1>
+            <form method="POST" autocomplete="off">
+                <fieldset class="form-group">
+                    <label for="username">User name</label>
+                    <input type="text" class="form-control my-2"
+                    name="username"
+                    placeholder="Enter username"
+                    id="username" required autofocus>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control my-2"
+                    name="password"
+                    placeholder="Enter password"
+                    id="password" required>
+                    <a href="/register">Register here</a>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="email">Email Id</label>
+                    <input type="email" class="form-control my-2"
+                    name="email"
+                    placeholder="Enter email id"
+                    id="email" required>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <label for="displayname">Displayname</label>
+                    <input type="text" class="form-control my-2"
+                    name="displayname"
+                    placeholder="Enter display name"
+                    id="displayname" required>
+                </fieldset>
+
+                <fieldset class="form-group text-right my-3 ">
+                    <input type="submit" class="reg-btn" value="Register">
+                    <a href="/"><input type="button" class="rcancel-btn mx-3" value="cancel"></a>
+
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+<%- include ('../partials/footer.ejs') %>     
